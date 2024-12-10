@@ -35,7 +35,7 @@ export default async function handler(req, res) {
   } else {
     console.log("Not using deployment")
     // black-forest-labs/flux-depth-pro
-    const version = "black-forest-labs/flux-depth-pro"
+    const version = "a2750efea69468f91ab96215343d44dda478e0a91d8822863760b469ad7bc587"
     prediction = await replicate.predictions.create({
       version, 
       input: req.body
