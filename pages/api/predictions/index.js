@@ -34,8 +34,8 @@ export default async function handler(req, res) {
     );
   } else {
     console.log("Not using deployment")
-    // logerzhu/ad-inpaint
-    const version = "b1c17d148455c1fda435ababe9ab1e03bc0d917cc3cf4251916f22c45c83c7df"
+    // black-forest-labs/flux-depth-pro
+    const version = "black-forest-labs/flux-depth-pro"
     prediction = await replicate.predictions.create({
       version, 
       input: req.body
