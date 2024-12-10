@@ -53,7 +53,7 @@ export default function Home() {
 
     const body = {
       prompt,
-      image: lastImage,
+      image_path: lastImage,
     };
 
     const response = await fetch("/api/predictions", {
