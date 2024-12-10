@@ -34,8 +34,8 @@ export default async function handler(req, res) {
     );
   } else {
     console.log("Not using deployment")
-    // https://replicate.com/timothybrooks/instruct-pix2pix/versions
-    const version = "30c1d0b916a6f8efce20493f5d61ee27491ab2a60437c13c588468b9810ec23f"
+    // logerzhu/ad-inpaint
+    const version = "b1c17d148455c1fda435ababe9ab1e03bc0d917cc3cf4251916f22c45c83c7df"
     prediction = await replicate.predictions.create({
       version, 
       input: req.body
